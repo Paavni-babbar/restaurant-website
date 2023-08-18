@@ -1,0 +1,613 @@
+body,
+html {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu-items a:hover {
+    color: red;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-size: 25px;
+}
+
+.menu-items {
+    word-spacing: 30px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: grey;
+    font-size: 25px;
+}
+
+.menu-right button {
+    font-size: 25px;
+    padding: 6px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    line-height: 35px;
+
+}
+
+/* media query for navbar */
+
+@media screen and (max-width: 992px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-items {
+
+        word-spacing: 15px;
+        width: 1500px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 400px;
+        margin-top: 10px;
+    }
+
+    .menu-left {
+        width: 100%;
+        font-size: 35px;
+        margin-left: 330px;
+    }
+
+    .menu-right {
+        margin: 20px;
+        margin-left: 340px;
+    }
+
+    .menu-right button {
+        padding: 5px;
+        width: 180px;
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+}
+@media screen and (max-width: 786px){
+    .menu-items{
+        margin-left: 320px;
+        }
+        .menu-left {
+        margin-left: 250px;
+        }
+        .menu-right {
+             margin-left: 270px;
+        }
+}
+
+@media screen and (max-width:600px){
+    .menu-items{
+        margin-left: 230px;
+    }
+    .menu-left{
+        margin-left:160px ;
+    }
+    .menu-right{
+        margin-left:180px ;
+    }
+}
+
+
+.image-size {
+    position: relative;
+    /* background-image: url(restaurant.mp4);
+    background-size: cover;
+   background-position: center center; */
+    /* display:flex; */
+    /* justify-content: space-around; */
+}
+
+.left {
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    font-size: 80px;
+    color: white;
+    height: 150px;
+    padding: 20px;
+    width: 400px;
+}
+
+.left_down1 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.left_down2 {
+    font-size: 30px;
+}
+
+.right {
+    position: absolute;
+    top: 120px;
+    right: 80px;
+}
+
+.right1 {
+    position: absolute;
+    left: 80px;
+    bottom: 80px;
+    font-size: 30px;
+    color: white;
+    width: 200px;
+}
+
+.right img {
+    width: 700px;
+}
+
+/********media query for image***********/
+
+@media screen and (max-width: 992px) {
+    .image-size {
+        position: relative;
+    }
+
+    .left {
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        font-size: 40px;
+        width: 300px;
+    }
+
+    .right {
+        position: absolute;
+        top: 120px;
+        right: 150px;
+    }
+
+    .right img {
+        width: 400px;
+    }
+
+    .right1 {
+        position: absolute;
+        left: 30px;
+    }
+
+    .right2 {
+        display: flex;
+    }
+
+    .right3 {
+        background-color: green;
+        width: 35px;
+        height: 35px;
+    }
+
+    .right4 {
+        background-color: brown;
+        width: 35px;
+        height: 35px;
+    }
+}
+@media screen and (max-width: 786px){
+    .right{
+        top: 120px;
+        right: 50px;
+    }
+    .right img {
+        width: 350px;
+    }
+    .right1 {
+       left: 25px;
+       font-size: 25px;
+    }
+    .grid i{
+
+        font-size: 22px;
+        
+    }
+}
+
+@media screen and (max-width:600px){
+    .left{
+       font-size: 25px;
+        width: 300px;
+    }
+    .left_down1{
+        font-size: 25px;
+    }
+    .left_down2{
+        font-size: 25px;
+    }
+    .image-size{
+        position: relative;
+    }
+    .right{
+        top: 100px;
+        right: 10px;
+        }
+        .right1{
+            position: absolute;
+            bottom:25px;
+        }
+    .right img {
+        width: 280px;
+    }
+   }
+    /**************************************/
+
+.right2 {
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+}
+
+.right3 {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+}
+
+.right4 {
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+}
+
+.article {
+
+    height: 100px;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 70px;
+}
+
+/* media query for special menu article*****/
+
+@media screen and (max-width: 992px) {
+    .article {
+        height: 70px;
+        margin-top: 70px;
+        text-align: left;
+        margin-left: 10px;
+        font-size: 50px;
+    }
+
+    .grid {
+        /* display:grid; */
+        grid-template-columns: auto auto !important;
+       margin: 0px !important;
+        }
+ .image img {
+        height: 200px;
+        width:100%;
+    }
+    .grid p{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:600px){
+    .grid{
+        grid-template-columns: auto !important;
+    }
+}
+
+/*******************************/
+.image img {
+    height: 400px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 30px 150px;
+}
+.grid p {
+    font-size: 35px;
+    margin: 20px;
+}
+
+.grid button {
+    font-size: 20px;
+    border-radius: 30px;
+    height: 60px;
+    width: 80px;
+    background-color: aliceblue;
+    color: orange;
+    border: none;
+}
+
+.background {
+    background-image: url(bck-br.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+}
+
+
+.heading {
+    font-size: 65px;
+    text-align: center;
+    padding-top: 60px;
+}
+/************** media query for news and event***************/
+@media screen and (max-width: 992px){
+    /*.bck-gr{
+        display:flex;
+        justify-content: space-between;
+    }*/
+    .bck-gr{
+       display:flex;
+       justify-content: space-between;
+       
+       }
+    .bck-gr1{
+      width:700px !important;
+      margin-left: 0px !important;
+      margin-right: 8px;
+    }
+    .bck-gr2{
+        width:700 !important;
+        margin-right: 0px !important;
+        margin-left: 8px;
+    }
+    .heading{
+        text-align: left;
+        margin-left:5px;  
+    }
+}
+@media screen and (max-width: 786px){
+    .heading {
+        
+        text-align: left;
+        margin-left:5px;
+        }
+}
+@media screen and (max-width:600px){
+    .bck-gr{
+        display: flex;
+        flex-direction: column;
+        
+        height: 800px !important;
+    }
+    .bck-gr1{
+        height: 900px !important;
+    }
+    .bck-gr2{
+        margin-left: 0px;
+        height: 900px !important;
+        margin-top: 60px;
+        position: relative;
+         }
+         .btton{
+            position: absolute;
+            bottom: 20px !important;
+         }
+}
+
+.bck-gr {
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+}
+
+.bck-gr1 {
+    background-image: url(one.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.bck-gr1 .btton {
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+}
+
+.btton button {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.btton p {
+    font-size: 30px;
+    color: white;
+}
+
+.bck-gr2 {
+    background-image: url(two.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 700px;
+    margin-right: 50px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.bck-gr2 .btton {
+    position: absolute;
+    left: 30px;
+    bottom: 100px;
+}
+@media screen and (max-width: 992px){
+    .bck-grr{
+        display: flex;
+        justify-content: space-between;
+       /* margin-left: 0px !important;
+        margin-right: 0px !important;*/
+        margin:1px !important;
+    }
+    .btn img{
+        width: 325px !important
+    }
+    .btn p{
+        font-size: 25px !important;
+    }
+    }
+
+@media screen and (max-width:786px){
+    .bck-grr{
+        display:flex;
+        flex-direction: column !important;
+        }
+.btn img{
+    width: 600px !important;
+    margin-left: 100px;
+    }
+    .btn p{
+        margin-left: 100px;
+    }
+    .btn button{
+        margin-left:100px; 
+    }
+
+}
+@media screen and (max-width:600px){
+     .btn img{
+       margin-top: 50px;
+       margin-left: 0px;
+    }
+    .btn p{
+        margin-left: 0px ;
+    }
+    .btn button{
+        margin-left: 0px;
+    }
+}
+
+.bck-grr {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 60px;
+}
+
+.btn img {
+    width: 400px;
+    height: 300px;
+}
+
+.btn button {
+    background-color: aqua;
+    color: white;
+    font-size: 15px;
+    border: none;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.btn span {
+    font-size: 15px;
+}
+
+.btn p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.foot {
+    background-image: url(footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.foot1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+.foot1 button {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: grey;
+    border: none;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.foot2 {
+    color: white;
+    font-size: 20px;
+    margin-top: 130px;
+    margin-left: -50px;
+
+}
+
+.foot3 {
+    color: white;
+    font-size: 20px;
+    margin-top: 150px;
+}
+@media screen and (max-width: 992px){
+    .foot{
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        }
+        .foot1{
+            margin-left: 400px;
+            margin-top: 30px;
+            font-size: 18px;
+            
+        }
+       .foot2{
+        margin-left: 400px;
+            font-size: 18px;
+            margin-top: 25px;
+       } 
+       .foot3{
+        margin-left: 400px;
+        font-size: 18px;
+        margin-top: 25px;
+   } 
+       }
+       @media screen and (max-width:786px){
+        .foot1{
+            margin-left: 350px;
+        }
+        .foot2{
+            margin-left: 350px;
+        }
+        .foot3{
+            margin-left: 350px;
+        }
+       }
+       @media screen and (max-width:600px){
+        .foot1{
+            margin-left:250px ;
+        }
+        .foot2{
+            margin-left:250px ;
+        }
+        .foot3{
+            margin-left:250px ;
+        }
+       }
